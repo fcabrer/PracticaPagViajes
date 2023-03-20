@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  background-color: #fff;
+  min-height: 100vh;
+}
+.section .imgInicio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140%;
+}
+.section .imgInicio .imgI {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .container {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+.section .container header {
+  z-index: 100;
+  position: absolute;
+  position: fixed;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  top: 0;
+  margin: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  cursor: pointer;
+}
+.section .container header .logo {
+  width: 150px;
+  cursor: pointer;
+}
+.section .container header ul {
+  position: relative;
+  display: flex;
+}
+.section .container header ul li {
+  list-style-type: none;
+  margin: 0 20px;
+  display: flex;
+}
+.section .container header ul a {
+  position: relative;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 4px 10px;
+  color: #ffffff;
+  left: 250px;
+}
+.section .container header ul a:hover {
+  color: #000000;
+}
+.section .container header ul .menDestinos {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  width: 620px;
+  height: 300px;
+  margin-top: 35px;
+  margin-left: 200px;
+  background-color: #000000;
+  opacity: 0;
+}
+.section .container header ul .menDestinos .destinos {
+  color: #ffffff;
+  background-color: #000000;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+}
+.section .container header ul .menDestinos .destinos h5 {
+  padding: 30px;
+  margin-right: 10px;
+}
+.section .container header ul .menDestinos .destinos li {
+  position: relative;
+  right: 10px;
+  bottom: 25px;
+}
+.section .container header ul.open .menDestinos {
+  opacity: 1;
+  transition: 0.1s;
+}
+.section .container header ul .menPaquetes {
+  position: absolute;
+  display: flex;
+  width: 620px;
+  height: 300px;
+  margin-top: 35px;
+  margin-left: 47px;
+  background-color: #000000;
+  opacity: 0;
+}
+.section .container header ul .menPaquetes .Paquetes {
+  color: #ffffff;
+  background-color: #000000;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+}
+.section .container header ul .menPaquetes .Paquetes h5 {
+  padding: 30px;
+  margin-right: 10px;
+}
+.section .container header ul .menPaquetes .Paquetes li {
+  position: relative;
+  right: 10px;
+  bottom: 25px;
+}
+.section .container header ul.active .menPaquetes {
+  opacity: 1;
+}
+.section .container .iniSecion {
+  border: 0;
+  font-size: 21px;
+  border-radius: 20px;
+  width: 200px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(230, 82, 29);
+  font-weight: 700;
+  transition: 0.2s;
+}
+.section .container .iniSecion:hover {
+  background-color: rgb(251, 119, 71);
+  box-shadow: 0 0 2px rgb(54, 54, 54);
+}
+.section .Content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 1200px;
+  height: 400px;
+}
+.section .Content .bannerText {
+  position: relative;
+  max-width: 80%;
+}
+.section .Content h2 {
+  padding: 20px;
+  margin-left: 120px;
+  font-size: 90px;
+  color: #fff;
+  line-height: 90px;
+  transition: 0.25s;
+}
+.section .Content h2:hover {
+  transform: translateY(-10px);
+}
+.section .Content p {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 140px;
+  color: #fff;
+}
+.section .Content .btnReserva {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: 70%;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(230, 82, 29);
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.section .Content .btnReserva:hover {
+  background-color: rgb(19, 19, 19);
+  border: 1px solid #7fc3da;
+  box-shadow: 0 0 2px #7fc3da;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.section .contImg {
+  position: relative;
+  top: 280px;
+  left: 0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.section .contImg .bannerImg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+}
+.section .contImg .bannerImg ul {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+.section .contImg .bannerImg li {
+  padding: 25px;
+  list-style-type: none;
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  color: #000000;
+  font-size: 22px;
+}
+.section .contImg .ImgMin {
+  width: 375px;
+  border-radius: 20px;
+  filter: brightness(60%);
+  transition: 1.5s;
+}
+.section .contImg .ImgMin:hover {
+  filter: brightness(100%);
+}
+
+.buscarVuelos {
+  position: relative;
+  margin: 0;
+  left: 0;
+  margin-top: 250px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.buscarVuelos .imgMar {
+  display: flex;
+  position: absolute;
+  min-height: 50%;
+  max-width: 100%;
+}
+.buscarVuelos .bannerVuelo {
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+  width: 80%;
+  height: 250px;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.buscarVuelos .tabla {
+  width: 300px;
+  padding: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buscarVuelos .tabla td {
+  padding: 10px;
+  line-height: 35px;
+}
+.buscarVuelos .tabla .tablaDos {
+  display: flex;
+  display: inline;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buscarVuelos .tabla .tablaTres {
+  display: flex;
+  border: rgb(254, 254, 254);
+  background-color: 12px aquamarine;
+}
+.buscarVuelos .tabla .Circ {
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: #3d8ea9;
+}
+.buscarVuelos .tabla .BtnBuscar {
+  border-radius: 25px;
+  border: 0.5;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #3d8ea9;
+  color: #3d8ea9;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.buscarVuelos .tabla .BtnBuscar:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #7fc3da;
+  box-shadow: 0 0 2px #7fc3da;
+  color: #7fc3da;
+}
+.buscarVuelos .tabla .BtnBuscarVuelo {
+  border-radius: 25px;
+  border: 0;
+  padding: 10px;
+  background-color: rgb(230, 82, 29);
+  font-weight: 700;
+  transition: 0.2s;
+  color: #ffffff;
+  font-size: 20px;
+}
+.buscarVuelos .tabla .BtnBuscarVuelo:hover {
+  background-color: rgb(251, 119, 71);
+  box-shadow: 0 0 2px rgb(54, 54, 54);
+}
+.buscarVuelos .tabla input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.buscarVuelos .imgAvion {
+  width: 50px;
+  border-radius: 20px;
+}
+
+.paquetes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 100%;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 5;
+}
+.paquetes .bannerPaquetes {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  display: inline-block;
+  padding: 100px;
+}
+.paquetes .bannerPaquetes .imgCaja {
+  background-color: #ffffff;
+  height: 500px;
+  margin-left: 70px;
+  margin-top: 50px;
+  border-radius: 15px;
+  display: flex;
+  display: inline-block;
+  color: #000000;
+  transition: 0.2s;
+}
+.paquetes .bannerPaquetes .imgCaja:hover {
+  box-shadow: 0 0 15px rgb(171, 171, 171);
+  box-shadow: 0 0 15px rgb(225, 225, 225);
+}
+.paquetes .imgPaquetes {
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+}
+.paquetes .contentPaquete {
+  display: flex;
+  display: block;
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 15px;
+}/*# sourceMappingURL=stylo.css.map */
